@@ -1,0 +1,54 @@
+
+.dinesh1,.dinesh3{
+
+	position:absolute;
+	margin-left:-100px;
+    
+	
+	
+
+}
+img{
+	
+	
+	transform: translate(-50% -50%);
+	animation:2s linear infinite;
+
+}
+
+
+
+
+.dinesh1{
+	animation:ht 5s linear infinite;
+	}
+
+.dinesh3{
+	animation:di 5s linear infinite;
+}
+
+
+
+
+
+@keyframes he{
+	0%{visibility:visible;}
+	25%{visibility:visible;}
+	50%{visibility:hidden;}
+	75%{*/
+
+
+@keyframes ht{
+	0%{visibility:visible;}
+	25%{visibility:hidden;}
+	50%{visibility:visible;}
+	75%{visibility:hidden;}
+	100%{visibility:hidden;}
+}
+@keyframes di{
+	0%{visibility:visible;}
+	25%{visibility:hidden;}
+	50%{visibility:hidden;}
+	75%{visibility:hidden;}
+	100%{visibility:visible;}
+}

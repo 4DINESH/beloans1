@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="evcss.css">
+
+
+
+
+</head>
+<style type="text/css">
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:;
+
+
+
+}
+
+li {
+  float: left;
+  font-size:20px;
+
+
+}
+
+li a {
+  display: block;
+  color: #1e266e;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  margin-left:50px;
+  text-align:left;
+}
+
+  
+
+li a:hover{
+  color:#33D4FF;
+}
+
+.div1{
+	background-color:#c3ebf3; 
+	height:500px;
+}
+	.had{
+		
+		margin-left:400px;
+		color: #232b72;
+		text-transform: capitalize;
+
+	}
+	.mad{
+
+		background-color:#fceeeb;
+		width:1200px;
+		margin-left:100px;
+		height:700px;
+	}
+	.mad h3{
+		margin-left:40px;
+		color: #54578c;
+		font-size:25px;
+
+	}
+	.mad h2{
+		margin-top:50px;
+		color: #54578c;
+		font-size:25px;
+	}
+	.mad h4{
+		margin-top:50px;
+		color: #54578c;
+		font-size:25px;}
+		.flex{
+			display:inline-flex;
+			margin-left: 600px;
+			
+		}
+		.text{
+			width:100px;
+			display:inline-flex;
+			color: #232b72;
+			
+			
+		}
+		.hading{
+			color: #2e3578;
+			font-size:30px;
+			text-transform:capitalize;
+		}
+		.str{
+			width:400px;
+			background-color:#ebf9fc;
+			height:400px;
+			margin-left:30px;
+			border-radius:30px;
+
+		}
+		.str1{
+			width:400px;
+			background-color:#fceeeb;
+			height:400px;
+			margin-left:470px;
+			margin-top:-400px;
+			border-radius:30px;
+
+		}
+		.str2{
+			width:400px;
+			background-color:#ebf7f5;
+			height:400px;
+			margin-left:910px;
+			margin-top:-420px;
+			border-radius:30px;
+			
+		}
+		.last{
+			width:1200px;
+			background-color: #c9eef6;
+			margin-left:110px;
+			border-radius:0px 20px 15px 10px;
+
+		}
+		.imgs{
+			margin-top:-300px;
+			margin-left:150px;
+		}
+		.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+q {font-style: italic;}
+.author {color: #2e3578;
+text-align:center;}
+.flex2{
+	display: inline-flex;
+
+}
+.text2{
+	color: #1e266e;
+	font-style:italic;
+}
+.text2 h2:hover{
+	border-top:solid 2px #1e266e ;
+	width:150px;
+}
+.flex h2:hover{
+	border-top:solid 2px #1e266e;
+	width:200px;
+
+}
+.flex3{
+	width:1000px;
+	background-color:#1e266e;
+	height:400px;
+	margin-left:150px;
+	border-radius: 20px 15px 15px 35px;
+}
+.flex4{
+	
+	background-color:#141b5d;
+	border-radius:200px;
+	width:500px;
+	font-size:2rem;
+	margin-top:-450px;
+	margin-left:400px;
+	height:300px;
+	font-style: italic;
+
+}
+
+.fa{
+	margin-left:600px;
+	margin-top:-250px;
+
+}
+.fa h3{
+	font-size:25px;
+}
+.fa1{
+	margin-left:950px;
+	margin-top:-150px;
+
+}
+.sa1 h3{
+	font-size:25px;
+
+}
+.fa2{
+margin-left:600px;
+	
+}
+
+
+.fa h4:hover{
+	text-decoration: underline;
+
+
+}
+.fa1 h4:hover{
+	text-decoration: underline;
+}
+.fa2 h4:hover{
+	text-decoration: underline;
+}
+.fa1 h3{
+	font-size:25px;
+}
+.fix{
+	position:fixed;
+}
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 1140px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1080px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 768px) {
+	.logo h1 a {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 668px) {
+
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 568px) {
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 415px) {
+	.
+
+@media screen and (max-width: 384px) {
+    .content-w3ls {
+        padding: 1em 1em;
+        margin: 1em auto;
+    }
+    .copyright p {
+        letter-spacing: .5px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+@media screen and (max-width: 320px) {
+    
+}
+.foter{
+	margin-left:100px;
+}
+@media screen and (max-width: 992px) {
+ 
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  
+}
+@media screen and (max-width: 600px){
+
+}
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 400px)  {
+}
+
+@media only screen and (max-width: 414px) {
+  .deviceWidth {width:280px!important; padding:0;}
+  @media print {
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+</style>
+<div class="example"> 
+<div class="row">
+  <div class="col-3 col-s-3">
+  <div class="col-6 col-s-9">
+  <div class="col-3 col-s-12">
+
+<body>
+	<div class="d-grid">
+	<div class="fix">
+	
+	<div class="mask">
+		<ul>
+		<li><a href="#" style="margin-left:400px; background-color: #c3ebf3;border-radius:100px;padding:10px;margin-top:7px;">Home</a></li>
+		<li><a href="#">About tha shop</a></li>
+		<li><a href="#">shop</a></li>
+		<li><a href="#">contact</a></li>
+		<li><a href="#">Buy now</a></li>
+		<li><a href="#" style="background-color:#232a71;border-radius: 5px 10px 0px 10px; color:white;height:10px;">my account</i></a></li>
+		</ul>
+
+	</div>
+</div>
+		<div class="dinesh1">
+
+<img src="sale6.PNG" style="margin-left:250px; width:500px;margin-top:35px;height:500px;border-radius:300px;"></div>
+<br>
+<div class="div1">
+	
+	<img src="medicalshop2.png" style="margin-bottom:100px;">
+<h3 style="color:#2b3679; margin-left:900px; text-transform:capitalize;font-size:35px;margin-top:-100px;">the leading producer of <br>face masks against <h1 style="color:#2b3679; margin-left:900px;text-transform:capitalize;font-size:55px;"></a> covid-19</h1><p style="margin-left:900px;color: #779095">Lorem ipsum dolor sit amet, consectetur adipiscing. Nulla mauris dolor gravida.</p><a href="https://www.youtube.com/watch?v=Ded_AxFfJoQ&feature=emb_logo"><img src="download.png" style="width:50px;border-radius:100px;margin-left:650px;margin-top: 50px;"></a>
+
+	<br><a href ="#"style="background-color:#f0495c;margin-left:900px;padding:15px;border-radius:5px 20px 15px 20px;color:white; text-decoration:none;">Discover our products</a></h3></div></div>
+	<br><img src="medicals.png" style="margin-left:1250px;height:50px;"><p style="margin-left:900px;margin-top:-50px;color:#779095;font-size:13px;">quisque lorem tortor fringilla sed, vestibulum id,eleifend justo vel <br>bibendum sapien massa ac turpis faucibus orci</p>
+	<br>
+	<div class="had">
+		<h1 style="font-size:50px; font-family:sans-serif;font-style: italic;">Our masks have a WHO Safety <br>Standard Certificate</h1></div>
+		<div class="mad">
+
+			<br>
+			
+			<br>
+			<img src="medicalshop2-icon1.png" style="margin-left:50px;">
+			<img src="icon2.png" style=" margin-left:900px; margin-top:70px;">
+	<p style=" margin-left:1000px; margin-top:100px;color: #54578c;font-size:30px;">Eco-Friendly</p><p style=" margin-left:1000px; margin-top:-6px; mar">Duis ultricies malesuada<br> leo vel aliquet. Curabitur<br> rutrum porta.</p>
+			<h3 style="margin-top:-200px;">5-layer<br> activated <br>carbon filter</h3><p style="margin-left:30px;">
+Lorem ipsum dolor sit amet,<br> consectetur adipiscing. <br>Nulla mauris dolor gravida.</p>
+<img src="pls1.png" style="border-radius:50px;margin-left:30px;width:20px;">
+<p style="margin-top:-25px;margin-left:60px;">Dust</p>
+<img src="pls1.png" style="border-radius:50px;margin-left:30px;width:20px;margin-top:-80px;">
+<br>
+<p style="margin-top:-25px;margin-left:60px;">Plant pollen</p>
+<img src="pls1.png" style="border-radius:50px;margin-left:30px;width:20px;">
+<br>
+<img src="icon2.png" style="margin-left:1030px;margin-top:-30px; ">
+<h4 style="margin-left:1000px;">Ergonomic shape</h4>
+<p style="margin-left:1000px;">Lorem ipsum dolor sit <br>amet, consectetur<br> adipiscing elit.</p>
+<p style="margin-top:-25px;margin-left:60px;margin-top:-250px;">Smog</p>
+<img src="pls1.png" style="border-radius:50px;margin-left:30px;width:20px;">
+<p style="margin-top:-25px;margin-left:60px;"> Bacteria</p>
+<img src="pls1.png" style="border-radius:50px;margin-left:30px;width:20px;">
+<p style="margin-top:-25px;margin-left:60px;">Coal dust</p>
+<img src="pls1.png" style="border-radius:50px;margin-left:30px;width:20px;">
+<hp style="margin-top:-25px;margin-left:60px;">Benzo dust</p>
+
+
+<img src="medical.png" style="margin-left:300px; margin-top:-800px; width:500px;">
+<br>
+
+
+
+ <!-- <img src="pls1.png" style="border-radius:50px;margin-left:30px;">Plant<br><img src="pls1.png" style="border-radius:50px;margin-left:30px;"> pollen
+ Smog<br>
+ <img src="pls1.png" style="border-radius:50px;margin-left:30px;">Bacteria<br><img src="pls1.png" style="border-radius:50px;margin-left:30px;">
+ Coal dust<br><img src="pls1.png" style="border-radius:50px;margin-left:30px;">
+ Benzo dust
+			 -->
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<br>
+		<br>
+		<br>
+		<br>
+<div class="flex">
+	<img src="icon6.png" style="margin-left:-260px;height:40px">
+	
+	
+	<br>
+	<br>
+	<br>
+	<h2 style="margin-left:-100px;margin-top:70px;">Soft & comfortable<br>
+materials</h2>
+<br><img src="icon5.png" style="margin-left:200px;height:40px">
+<br><h2 style="margin-left:-60px;margin-top:70px; color:#232b72;">Replaceable<br>
+N99 filter</h2>
+<br>
+<img src="icon4.png" style="margin-left:190px; height:40px">
+<br>
+<h2 style="margin-left:-80px;margin-top:80px;color:#232b72;">Perfect for outdoor<br>
+activities</h2>
+</div>
+<br>
+<!-- <div class="text"> -->
+
+
+<!-- </div> -->
+
+<br>
+
+
+
+
+	
+	
+	
+
+<!-- <div class="seimg">
+	<img src="icon5.png">
+	
+</div>
+<div class="text1">
+
+<p >Soft & comfortable<br>
+materials</p>
+</div> -->
+
+<div class=" hading">
+<hr> 
+	<h1 style="margin-left:300px;">
+		Choose your package or buy
+		<br> <b style="margin-left:120px;">single products</b>
+	</h1>
+
+
+
+
+</div>
+<br><br>
+<br>
+<br><br>
+<div class="str">
+	<img src="st1.png" style="margin-top:30px;margin-left:30px;">
+	<h1 style="color:#2e3578;font-size:3rem;margin-left:20px;">Basic</h1>
+	<h3  style="color: #68d5ea; font-size:30px;margin-left:20px;">$360 -<sup style="color: #68d5ea;">10%</sup></h3>
+	<img src="pls2.png" style="width:40px"><p style="margin-left:35px;margin-top:-25px;"> 50 masks per box</p>
+	<br>
+
+	<img src="pls2.png" style="width:40px"><p style="margin-left:35px;margin-top:-25px;"> Ergonomic shape</p>
+	<br>
+	
+	<img src="pls2.png" style="width:40px"><p style="margin-left:35px;margin-top:-25px;">Bacteria filter capacity: 98%</p>
+</div>
+<div class="str1">
+	<img src="str4.png" style="margin-top:30px;margin-left:30px;">
+	<h1 style="color:#2e3578;font-size:3rem;margin-left:20px;">Standard</h1>
+	<h3  style="color: #f47c8a; font-size:30px;margin-left:20px;">$680  -<sup style="color: #f47c8a;">-15%</sup></h3>
+	<img src="pls.png" style="width:20px"><p style="margin-left:35px;margin-top:-25px;"> 100 masks per box</p>
+	<br>
+
+	<img src="pls.png" style="width:20px"><p style="margin-left:35px;margin-top:-25px;"> Ergonomic shape</p>
+	<br>
+	
+	<img src="pls.png" style="width:20px"><p style="margin-left:35px;margin-top:-25px;"> Bacteria filter capacity: 98%</p>
+</div>
+	<br>
+	<div class="str2">
+	<img src="str3.png" style="margin-top:30px;margin-left:30px;">
+	<h1 style="color:#2e3578;font-size:3rem;margin-left:20px;">Expanded</h1>
+	<h3  style="color:#78c9be; font-size:30px;margin-left:20px;">$960 <sup style="color: #78c9be;">-20%  </sup></h3>
+	<img src="pls2.png" style="width:40px"><p style="margin-left:35px;margin-top:-25px;"> 100 masks per box</p>
+	
+
+	<img src="pls2.png" style="width:40px"><p style="margin-left:35px;margin-top:-25px;"> Ergonomic shape</p>
+	
+	
+	<img src="pls2.png" style="width:40px"><p style="margin-left:35px;margin-top:-25px;"> Bacteria filter capacity: 98%</p>
+
+</div>
+	<br>
+	<br>
+	<br>
+	<!-- <!-- <br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+  	  <div class="slideshow-container">
+
+
+  
+</div>
+<br><br>
+</ -->
+<br>
+<br>
+<div class="button">
+	<center>	<a href="#" style="background-color:#1e266e;color: white;padding:20px;text-decoration:none;text-transform:capitalize;border-radius:5px 20px 20px ">browse all products </a>
+	<a href="#" style="background-color:#f0475a;color: white;padding:20px;text-decoration:none;text-transform:capitalize;border-radius:5px 20px 20px;margin-left:20px; ">choose & buy package</a></center>
+
+</div>
+<br>
+<br>
+<center>
+<p>
+Lorem ipsum dolor sit amet adipiscing elit</p></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="last">
+	<br>
+	<br>
+	<h1 style="color: #2e3578;font-size:4rem;margin-left:50px;">How to wear <br>a mask?
+</h1>
+<p style="margin-left:50px;margin-top:50px;">Ut ultricies imperdiet sodales. Aliquam<br> fringilla aliquam ex sit amet elementum. <br>Proin bibendum feugiat.
+
+</p>
+
+
+	  <a href="https://www.youtube.com/watch?v=M4olt47pr_o&feature=emb_logo"> <img src="img10.png" style="width:600px;margin-left:500px; margin-top:-250px;"></a>
+
+
+
+
+
+	</div>
+	<br>
+	<br>
+	<div class="imgs">
+	<img src="backicon.png" style="width:30px;">
+	<p style="margin-left:50px;margin-top:-30px;">Vivamus in diam turpis maximus
+</p>
+
+<img src="backicon.png" style="width:30px;">
+<p style="margin-left:50px;margin-top:-30px;">Fusce lobortis porttitor purus libero
+</p>
+<img src="backicon.png" style="width:30px;">
+<p style="margin-left:50px;margin-top:-30px;">Aliquam consectetur orci eget
+</p>
+</div>
+<br>
+<br>
+<a href="#" style="padding:15px;background-color: #1e266e;color:white;text-decoration:none;text-transform:capitalize;margin-left:200px;border-radius: 0px 20px 10px 20px">read more</a>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+
+
+
+<br><br>
+
+
+
+
+<br><br>
+
+
+
+
+<br><br>
+
+
+
+
+<br><br>
+
+
+<div class="slideshow-container">
+    <center>
+<table><tr>
+  <td>
+    <div class="mySlides">
+      
+      <img src="1.png" style="border-radius: 80px; margin-left:450px; ">
+      <br>
+      <br><br>
+      <br><br>
+      <br><br>
+      
+  <q>justo vel bibendum sapien massa ac trupis faucibus orci luctus non consectetuer lodartis quis varius in purus  integer ultrices posuere cubilie curae nullla <BR> ipsumm dolor lacus suscipit adipiscing cum sociis natoque pentibus et ultrices volutpat nullam wisi ultricies a gravida vitae.</q>
+       <p class="author">- DR.KEVIN PERRY</p>
+</div>
+
+<div class="mySlides">
+   
+  <img src="2.png" style="border-radius: 80px;margin-left:450px; "><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      
+  <q>faucibus quis porttitor eros cursus  lectus pellentesque eget bibendum a, gravida ullamcorper<br> qum nullam viverra consectetur quisque curus et porttitor risus aliquam sem  in hendrerit nulla quam nunc accumsan congue  lorem ipsum primis in nidh vel .</q>
+  <p class="author">-DR.JENNIFER</p>
+</div>
+
+<div class="mySlides">
+   
+  <img src="3.png" style="border-radius: 80px;margin-left:450px; "><br>
+      <br><br>
+      <br><br>
+      <br><br>
+    
+  <q>lorem ipsum dolor set amet enim etaim ullamcorper  dui non felis Maecenas  malesuada elit lectus felis <br>malesuada ultricies curabitur rt ligula ut molesite a ultricies porta urna vestibulum commodo volutpat a convallis ac, laoreet enim phasellus fermenturm in dolor .</q>
+  <p class="author">DR.ANTHONY ZACK</p>
+</div>
+  
+  <a class="prev" onclick="plusSlides(-1)" style="margin-left:-80px;">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+</div>
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</td>
+
+</table></center>
+ 
+</div>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="flex2">
+	<img src="img21.png" style=" margin-left:300px;">
+	
+	<img src="img22.png" style="margin-left:280px;">
+	<br>
+	
+	<img src="img23.png" style="margin-left:250px;">
+	</div>
+	<div class="text2">
+
+<h2 style="margin-left:280px;"> Always<br>
+free shipping</h2>
+  <h2 style="margin-left:600px;margin-top:-70px;">14 day<br>
+return policy</h2>
+<h2 style="margin-left:850px;margin-top:-70px;">     Quick delivery<br>
+in 48h</h2>
+
+	
+
+
+
+
+
+
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<div class="flex3">
+	
+
+	
+
+</div>
+<div class="flex4">
+	<h2 style="color: white; margin-top:100px ">You can be a hero
+		<br>#stayhome</h2>
+		<a href="#"  style="background-color:#f0495c;margin-left:50px;padding:10px;border-radius:5px 20px 15px 20px;color:white; text-decoration:none;margin-top:px;">Discover our products</a></div>
+		<br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+<div class="foter">
+
+<p>FEEL FREE TO CONTACT US</p>
+<h2 style="color:#3a4080;font-size:2rem">+61 (0) 383 766 284</h2>
+<p>noreply@envato.com
+<br>ACCEPTED PAYMENT METHODS
+</p>
+<img src="fimg.png">
+</div>
+<div class="fa">
+	<h3 style="color: #1e266e">Useful links</h3>
+<h4>Contact us<br>
+Help & About us<br>
+Shipping & Returns<br>
+Refund Polic</h4>
+</div>
+<div class="fa1">
+	<h3 style="color: #1e266e">Customer service</h3>
+<h4>Orders
+Downloads<br>
+Addresses<br>
+Account details<br>
+Logout<br>
+Lost passwor</h4>
+
+</div>
+<div class="fa2">
+	<h3 style="color: #1e266e">Delivery</h3>
+<h4>How it Works<br>
+Free Delivery<br>
+FAQ
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<div class="foterman">
+	<hr>
+	<h4 >© 2021 BeMedicalShop 2 - Betheme. All Rights Reserved. Muffin group<p style="margin-left: 1000px;margin-top:-30px;">trems and conditions 
+orivacy policy  cookies</p>
+</h4>
+
+</div>
+</div>
+</div>
+</h4>
+</div>
+</div>
+
+
+
+</body>
+</html>
